@@ -58,7 +58,7 @@ const Home = ({ navigation }) => {
     }
 
     function renderTrendingSection(){
-        return(
+        return (
             <View style={{ marginTop:SIZES.padding,  marginBottom:SIZES.padding}}>
                 <Text style={{marginHorizontal:SIZES.padding, ...FONTS.h2}}>Trending Recipes</Text>
                 <FlatList data={dummyData.trendingRecipes} horizontal showsHorizontalScrollIndicator={false} keyExtractor={item => `${item.id}`} renderItem={({item, index}) => {
@@ -72,7 +72,7 @@ const Home = ({ navigation }) => {
     }
 
     function renderCategoryHeader(){
-        return(
+        return (
             <View style={{ flexDirection:'row', alignItems:'center', marginTop:20, marginHorizontal:SIZES.padding }}>
                 <Text style={{flex:1, ...FONTS.h2}}> Categories </Text>
 
